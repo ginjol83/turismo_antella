@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Select Language</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-list color="transparent" >
+    <ion-item (click)="cambiarLenguaje('ct')">
+      <ion-avatar  >
+        <img src="../assets\bandera_valencia.jpg">
+      </ion-avatar>
+      <h2>Valencià</h2>
+    </ion-item>
+    <ion-item (click)="cambiarLenguaje('es')">
+      <ion-avatar item-start>
+        <img src="../assets\bandera_espana.jpg">
+      </ion-avatar>
+      <h2>Español</h2>
+    </ion-item>
+    <ion-item (click)="cambiarLenguaje(en)">
+      <ion-avatar item-start>
+        <img src="../assets\bandera_reino_unido.jpg">
+      </ion-avatar>
+      <h2>English</h2>
+    </ion-item>
+    <ion-item (click)="cambiarLenguaje(it)">
+      <ion-avatar item-start>
+        <img src="../assets\bandera_italia.jpg">
+      </ion-avatar>
+      <h2>Italiano</h2>
+    </ion-item>
+  </ion-list>
+
+
+ 
+    
+  
+
+</ion-content>
+<ion-footer>
+  <ion-thumbnail>
+    
+  </ion-thumbnail>
+</ion-footer>

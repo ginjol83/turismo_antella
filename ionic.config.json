@@ -1,0 +1,7 @@
+{
+  "name": "turismeAntella",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

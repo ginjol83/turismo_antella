@@ -1,0 +1,41 @@
+ion-content {
+    --background: none;
+    background-image: url('../../assets/idioma_back.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    display: flex!important;
+    align-content: center!important;
+    align-items: center!important;
+  }
+ion-toolbar {
+    --background: none;
+    background-color: warning;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+  }
+  ion-list {
+    background-color: transparent !important;
+    height: 100%;
+    width: 50%;
+    text-align:center !important;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  ion-item {
+    background-color: transparent !important;
+    padding: 2px;
+    
+    border-radius: 1em;
+
+    
+  }
+ .escut{
+    height: 50%;
+    width: 50%;
+ }
+  

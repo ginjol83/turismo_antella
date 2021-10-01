@@ -1,0 +1,11 @@
+{
+    "HOLA": "Hello",
+    "BIENVENIDO": "Welcome",
+    "SALUDO": "Hi, {{ value }}",
+    "LUGARES_DE_INTERES":"Sites", 
+    "EL_BALCON_DE_ANTELLA":"Antella lookout",
+    "CREU_ALTA":"Creu Alta",
+    "LIGLESIA":"Church",
+    "LASSUT":"Assut",
+    "AYUNTAMIENTO":"Antella Council"
+   }

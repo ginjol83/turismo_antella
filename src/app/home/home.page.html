@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+        <img (click)="go('/inicio');" src="../assets/icon/imagen-corporativa-antella.png" width="40" height="40"/>
+    </ion-buttons>
+    <ion-title>
+      <h2>{{ 'LUGARES_DE_INTERES' | translate }}</h2>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="assut_card" (click)="go('/assut');">
+      <ion-card-content><h1>{{ 'LASSUT' | translate }}</h1></ion-card-content> 
+    </ion-card>
+    <ion-card class="iglesia_card" (click)="go('/iglesia');">
+      <ion-card-content><h1>{{ 'LIGLESIA' | translate }}</h1></ion-card-content>
+    </ion-card>
+    <ion-card class="creu_alta_card" (click)="go('/creueta');">
+      <ion-card-content><h1>{{ 'CREU_ALTA' | translate }}</h1></ion-card-content>
+    </ion-card>
+    <ion-card class="torre_card" (click)="go('/torre');">
+      <ion-card-content><h1>{{ 'TORRE' | translate }}</h1></ion-card-content>
+    </ion-card>  
+    <ion-card class="ermita_card" (click)="go('/ermita');">
+      <ion-card-content><h1>{{ 'ERMITA' | translate }}</h1></ion-card-content>
+    </ion-card>  
+    <ion-card class="casa_comportes_card" (click)="go('/compuertas');">
+      <ion-card-content><h1>{{ 'CASA_COMPORTES' | translate }}</h1></ion-card-content>
+    </ion-card>  
+    <!--ion-card class="balcon_card" (click)="go('/balcon');">
+      <ion-card-content><h1>{{ 'EL_BALCON_DE_ANTELLA' | translate }}</h1></ion-card-content>
+    </ion-card>  
+    <ion-card class="poblat_iber_card">
+      <ion-card-content><h1>{{ 'POBLAT_IBER' | translate }}</h1></ion-card-content>
+    </ion-card-->  
+    <!--ion-card class="jardins_assut_card">
+      <ion-card-content><h1>{{ 'JARDINS_ASSUT' | translate }}</h1></ion-card-content>
+    </ion-card>  
+    <ion-card class="casa_rey_card">
+      <ion-card-content><h1>{{ 'CASA_REY' | translate }}</h1></ion-card-content>
+    </ion-card>  
+    <ion-card class="moli_card">
+      <ion-card-content><h1>{{ 'EL_MOLI' | translate }}</h1></ion-card-content>
+    </ion-card-->  
+
+
+</ion-content>
+
+<ion-footer-bar class="bar-balanced">&copy;{{ 'AYUNTAMIENTO' | translate }}</ion-footer-bar>
+

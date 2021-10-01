@@ -1,0 +1,136 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+        <img (click)="go('/inicio');" src="../assets/icon/imagen-corporativa-antella.png" width="40" height="40"/>
+    </ion-buttons>
+    <ion-title>
+      <h2>{{ 'SERVICIS' | translate }}</h2>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+
+  <ion-list>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../assets\restaurant.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Bocateria la Real</h3>
+        <p> +34962974568</p>
+      </ion-label>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d859.3636486826152!2d-0.5948571360536035!3d39.08152002640212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15bbc19d7e5be31f!2sBocateria%20Real!5e1!3m2!1ses!2ses!4v1594488850395!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+    
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../assets\restaurant.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Barracó al Fresc</h3>
+        <p>+34-659150056</p>
+      </ion-label>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1379.613684146617!2d-0.5954498363200982!3d39.080782469027746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x19ff1a1c1e177218!2sBARRACO%20AL%20FRESC!5e0!3m2!1ses!2ses!4v1594048691414!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+    
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../assets\restaurant.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Bar Sol</h3>
+      </ion-label>
+      <ion-button 
+        color="warning" 
+        (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.9092594068798!2d-0.5904787135669803!3d39.080360037141794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a79ad3938007%3A0xfd127ae99ce5af50!2sBar%20sol!5e1!3m2!1ses!2ses!4v1594488675604!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../assets\restaurant.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Pub la Hiedra</h3>
+      </ion-label>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727.3802966568509!2d-0.5944631072763207!3d39.08108578568426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0294c9f167a327b!2sPub%20Hiedra!5e1!3m2!1ses!2ses!4v1594488397729!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+    
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../assets\market.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Supermercat Casa Virginio</h3>
+        <p>+34962595074</p>
+      </ion-label>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6194.278085339388!2d-0.5959928234642294!3d39.08053051817134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcfee14b3ae76cbae!2sSupermercados%20Charter!5e0!3m2!1ses!2ses!4v1594048095818!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../assets\market.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Supermercat Charter</h3>
+        <p>+34-962974408</p>
+      </ion-label>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6194.278085339388!2d-0.5959928234642294!3d39.08053051817134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcfee14b3ae76cbae!2sSupermercados%20Charter!5e0!3m2!1ses!2ses!4v1594048095818!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../assets\market.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Supermercat DIA</h3>
+      </ion-label>
+      
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d855.7879516522812!2d-0.5923617759018729!3d39.08004700368395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a74556580b73%3A0x32286a915a0bad32!2sDIA!5e1!3m2!1ses!2ses!4v1594489327661!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../assets/icon/panaderia.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Despatx de pa Rosi</h3>
+      </ion-label>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d855.7879516522812!2d-0.5923617759018729!3d39.08004700368395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a7771f6abe27%3A0x432e2187795a9848!2sDespatx%20De%20Pa%20Rosi!5e1!3m2!1ses!2ses!4v1594489440857!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../assets/icon/farmacia.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Farmacia Antella</h3>
+        <p>+34962595014</p>
+      </ion-label>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.7296698284607!2d-0.593240777736203!3d39.08030101212136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a738bfef82c9%3A0xcb315b51f33eb001!2sFarmacia%20Antella!5e1!3m2!1ses!2ses!4v1594489646833!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button> 
+    </ion-item>
+
+  </ion-list>
+</ion-content>
+<ion-footer-bar class="bar-balanced">&copy;Ajuntament d'Antella</ion-footer-bar>

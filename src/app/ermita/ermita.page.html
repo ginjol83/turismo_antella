@@ -1,0 +1,88 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+        <img (click)="go('/inicio');" src="../assets/icon/imagen-corporativa-antella.png" width="40" height="40"/>
+    </ion-buttons>
+    <ion-title>
+      <h2>{{ 'ERMITA_TITLE' | translate }}</h2>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-header></app-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <h1 style="text-align: center;padding: 3%;">{{ 'ERMITA' | translate }}</h1>
+      </ion-card-title>
+      <ion-slides scrollbar="true">
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita1.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita2.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita3.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita4.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita5.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita6.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita7.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita8.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita9.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita/ermita10.jpg"></ion-img>
+        </ion-slide>
+
+      </ion-slides>
+        <ion-text style="justify-content: center;display: flex;text-align: center;padding: 5%;">
+          << {{ 'SLIDER_TEXT' | translate }} >>
+        </ion-text>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button color="warning" (click)="reproductor();">
+        <ion-icon name="headset-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+
+      <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+        <ion-icon name="stop"></ion-icon>
+      </ion-button>
+
+      <p style="padding: 10%;">
+        <ion-text style="padding: 10%;">
+          {{ 'ERMITA_CONTENT' | translate }} 
+        </ion-text>
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198213.68153986224!2d-0.7307687835937546!3d39.081675600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a78509ecadd5%3A0x911badb8b36def13!2sErmita%20del%20Crist%20de%20l&#39;Agonia!5e0!3m2!1ses!2ses!4v1594553156549!5m2!1ses!2ses" 
+        width="400" 
+        height="300" 
+        frameborder="0" 
+        style="border:0;" 
+        allowfullscreen="" 
+        aria-hidden="false" 
+        tabindex="0">
+      </iframe>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer-bar class="bar-balanced">&copy;{{ 'AYUNTAMIENTO' | translate }}</ion-footer-bar>

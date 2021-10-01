@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <img (click)="go('/inicio');" src="../assets/icon/imagen-corporativa-antella.png" width="40" height="40"/>
+    </ion-buttons>
+    <ion-title>
+      <h2>{{ 'LIGLESIA' | translate }}</h2>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <h1 style="text-align: center;padding: 3%;">{{ 'LIGLESIA_DETAIL' | translate }}</h1>
+      </ion-card-title>
+      <ion-slides scrollbar="true">
+        <ion-slide>
+          <ion-img src="../assets/imagenes/iglesia/iglesia1.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/iglesia/iglesia4.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/iglesia/iglesia5.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/iglesia/iglesia6.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/iglesia/iglesia10.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/iglesia/iglesia17.jpg"></ion-img>
+        </ion-slide>
+        
+
+
+      </ion-slides>
+      <ion-text style="justify-content: center;display: flex;text-align: center;padding: 5%;">
+        << {{ 'SLIDER_TEXT' | translate }}>>
+      </ion-text>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button color="warning" (click)="reproductor();">
+        <ion-icon name="headset-outline"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+        <ion-icon name="stop"></ion-icon>
+      </ion-button>
+      <p style="padding: 10%;">
+        <ion-text style="padding: 10%;">{{ 'IGLESIA_CONTENT' | translate }}</ion-text>
+      </p>
+
+      <iframe style="justify-content: center;display: flex;text-align: center;padding: 5%;"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.4220475462407!2d-0.5914615114384949!3d39.07920503192951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28802e3d7c08fe99!2sParr%C3%B2quia%20de%20la%20Pur%C3%ADssima%20Concepci%C3%B3!5e0!3m2!1ses!2ses!4v1594277843073!5m2!1ses!2ses"
+        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer-bar class="bar-balanced">&copy;{{ 'AYUNTAMIENTO' | translate }}</ion-footer-bar>

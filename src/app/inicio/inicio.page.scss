@@ -1,0 +1,129 @@
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  .imagen {
+    /* IMPORTANTE */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ion-card-content{
+    height: 25%;
+    padding: 2px;
+    text-align: center;
+  }
+  
+  ion-card{
+    height: 25%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  .home_card{
+    background-image: url('../../assets/imagenes/menuPrincipal/casa_comportes.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .rutes_card{
+    background-image: url('../../assets/imagenes/menuPrincipal/rutes.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .servicios_card{
+    background-image: url('../../assets/imagenes/menuPrincipal/servicios.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .idioma_card{
+    background-image: url('../../assets/imagenes/menuPrincipal/idioma.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .poblat_iber_card{
+    background-image: url('../../assets/balcon_card.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .torre_card{
+    background-image: url('../../assets/imagenes/menuPrincipal/torre.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .ermita_card{
+    background-image: url('../../assets/imagenes/menuPrincipal/ermita.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .casa_comportes_card{
+    background-image: url('../../assets/imagenes/menuPrincipal/casa_comportes.png'); 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .jardins_assut_card{
+    background-image: url('../../assets/balcon_card.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .casa_rey_card{
+    background-image: url('../../assets/balcon_card.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  .moli_card{
+    background-image: url('../../assets/balcon_card.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto;
+  }
+  
+  
+  
+  
+  
+  h1 {
+    color: #ffffff;
+   // font-weight: bold;
+   // padding-top: 10%;
+   
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }

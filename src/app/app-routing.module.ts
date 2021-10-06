@@ -28,8 +28,8 @@ const routes: Routes = [
     loadChildren: () => import('./restaurant/restaurant.module').then( m => m.RestaurantPageModule)
   },
   {
-    path: 'rutes',
-    loadChildren: () => import('./rutes/rutes.module').then( m => m.RutesPageModule)
+    path: 'maera',
+    loadChildren: () => import('./maera/maera.module').then( m => m.MaeraPageModule)
   },
   {
     path: 'audios',

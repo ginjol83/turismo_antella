@@ -45,8 +45,8 @@ export class AppComponent {
         url   : "/home",
         icon  : "home"
       },{
-        title : "Rutes",
-        url   : "/rutes",
+        title : "Maera",
+        url   : "/maera",
         icon  : "walk"
       },{
         title : "Servicis",
@@ -57,11 +57,11 @@ export class AppComponent {
       //  url   : "/audios",
       //  icon  : "headset"
       },
-      {
-        title : "Contactans",
-        url   : "/contact",
-        icon  : "mail"
-      },
+      //{
+      //  title : "Contactans",
+      //  url   : "/contact",
+      //  icon  : "mail"
+      //},
       {
         title : "Idioma",
         url   : "/idioma",

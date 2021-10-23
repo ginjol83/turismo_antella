@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-maera',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaeraPage implements OnInit {
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
+    if (this.translate.currentLang==="es"){
+      console.log("idioma seleccionado "+this.translate.currentLang)
+    }else{
+      console.log("idioma seleccionat "+this.translate.currentLang)
+    }
   }
-
 }

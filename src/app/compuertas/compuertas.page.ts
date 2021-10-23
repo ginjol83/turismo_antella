@@ -21,7 +21,15 @@ export class CompuertasPage implements OnInit {
     }else{
       console.log("idioma seleccionat "+this.translate.currentLang)
     }
-    this.audio.src = '../assets/audioguias/CASA_COMPORTES_CT.mp3';
+
+    if (this.translate.currentLang==="es"){
+      console.log("idioma seleccionado "+this.translate.currentLang);
+      this.audio.src = '../assets/audioguias/CASA_COMPORTES_ES.mp3';
+    }else{
+      console.log("idioma seleccionat "+this.translate.currentLang)
+      this.audio.src = '../assets/audioguias/CASA_COMPORTES_CT.mp3';
+    }
+    
     this.audio.load();
   }
 

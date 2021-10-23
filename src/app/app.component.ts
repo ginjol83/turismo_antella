@@ -45,7 +45,7 @@ export class AppComponent {
         url   : "/home",
         icon  : "home"
       },{
-        title : "Maera",
+        title : "Maerà",
         url   : "/maera",
         icon  : "walk"
       },{
